@@ -1,5 +1,9 @@
 function __git__branch {
-	git branch 2> /dev/null| sed -e '/^[^*]/d' -e 's/* \(.*\)/ (\1)/'
+        git branch 2> /dev/null| sed -e '/^[^*]/d' -e "s/* \(.*\)/ (\1$(__git_status))/"
+}
+
+function __git_status {
+        [[ $(LC_ALL=C git status 2> /dev/null | tail -n1) != *"nothing to commit"* ]] && echo " [*]"
 }
 
 if [[ ${EUID} == 0 ]] ; then
