@@ -1,7 +1,7 @@
 # Awesome Bash PS1
 
 ### What is it
-![screen](https://github.com/sergkondr/stuff/blob/master/bash.png)
+![screen](https://github.com/sergkondr/stuff/blob/master/bash_smoothly_ps.png)
 
 It displays:
 - Hostname
