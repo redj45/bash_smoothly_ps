@@ -3,6 +3,6 @@
 ### HowToUse
 
 - sudo cp ./bash_prompt.sh /etc/profile.d/
-- echo 'source /etc/proflie' >> ~/.bashrc
+- echo 'source /etc/profile' >> ~/.bashrc
 
 reopen/relogin into terminal (tty/ptty)
