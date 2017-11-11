@@ -7,9 +7,9 @@ function __git_status {
 }
 
 function __virtual_env {
-	if [[ $VIRTUAL_ENV != "" ]] ; then 
-		echo env:$(basename $VIRTUAL_ENV)\ 
-	fi 
+        if [[ $VIRTUAL_ENV != "" ]] ; then 
+		            echo env:$(basename $VIRTUAL_ENV)\ 
+	      fi 
 }
 
 if [[ ${EUID} == 0 ]] ; then
