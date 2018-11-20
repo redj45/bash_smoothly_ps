@@ -21,11 +21,15 @@ else
 fi
 
 alias ls='ls --color';
-alias ll='ls -la';
+alias ll='ls -lah';
 alias rm='rm -i';
 alias mv='mv -i';
 alias mc='mc --colors normal=green,default:selected=brightmagenta,gray:marked=yellow,default:markselect=yellow,gray:directory=blue,default:executable=brightgreen,default:link=cyan,default:device=brightmagenta,default:special=lightgray,default:errors=red,default:reverse=green,default:gauge=green,default:input=white,gray:dnormal=green,gray:dfocus=brightgreen,gray:dhotnormal=cyan,gray:dhotfocus=brightcyan,gray:menu=green,default:menuhot=cyan,default:menusel=green,gray:menuhotsel=cyan,default:helpnormal=cyan,default:editnormal=green,default:editbold=blue,default:editmarked=gray,blue:stalelink=red,default';
 alias cls='clear';
+alias ip='ip --color';
+alias ipb='ip --brief';
+alias rand='openssl rand -base64';
+alias nt='netstat -tunlp';
 
 unset use_color safe_term match_lhs
 export HISTCONTROL=ignoreboth
